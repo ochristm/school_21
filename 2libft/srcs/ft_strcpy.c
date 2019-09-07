@@ -6,7 +6,7 @@
 /*   By: ochristm <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/24 14:57:11 by ochristm          #+#    #+#             */
-/*   Updated: 2019/06/24 15:26:18 by ochristm         ###   ########.fr       */
+/*   Updated: 2019/09/07 17:57:59 by ochristm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,17 +26,3 @@ char	*ft_strcpy(char *s1, char *s2)
 	s1[i] = '\0';
 	return (s1);
 }
-
-/*int		main(void)
-{
-	char *src = "Hello, Jo!\n";
-	char dest[12] = {};
-	char *ptr;
-
-	ptr = dest;
-	printf("src = %s", src);
-	printf("dest before = %s.\n", ptr);
-	printf("dest after = %s", ft_strcpy(ptr, src));
-
-	return (0);
-}*/

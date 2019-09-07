@@ -1,27 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcmp.c                                        :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ochristm <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/05 20:29:41 by ochristm          #+#    #+#             */
-/*   Updated: 2019/09/05 20:42:37 by ochristm         ###   ########.fr       */
+/*   Created: 2019/09/07 18:14:23 by ochristm          #+#    #+#             */
+/*   Updated: 2019/09/07 18:26:43 by ochristm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
-int	ft_strcmp(char *s1, char *s2)
+void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	int i;
+	size_t i;
 
 	i = 0;
-	while (s1[i] == s2[i])
-	{
-		i++;
-		if (s1[i] == '\0' && s2[i] == '\0')
-			return (0);
-	}
-	return (s1[i] - s2[i]);
+	if (((unsigned char *)src) < ((unsigned char *)dst))
+		while (len-- > 0)
+			((unsigned char *)dst)[len] = ((unsigned char *)src)[len];
+	else
+		while (i < len)
+		{
+			((unsigned char *)dst)[i] = ((unsigned char *)src)[i];
+			i++;
+		}
 }
