@@ -6,12 +6,13 @@
 #    By: ochristm <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/09/05 21:27:35 by ochristm          #+#    #+#              #
-#    Updated: 2019/09/05 21:27:38 by ochristm         ###   ########.fr        #
+#    Updated: 2019/09/07 10:50:35 by ochristm         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
-SRC = srcs/
+SRC = srcs/ft_putchar.c srcs/ft_putstr.c srcs/ft_strcmp.c \
+	  srcs/ft_strlen.c srcs/ft_swap.c
 OBJECTS = ft_putchar.o ft_putstr.o ft_strcmp.o ft_strlen.o ft_swap.o
 HEADERS = includes/
 FLAGS = -Wall -Werror -Wextra
