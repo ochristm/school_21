@@ -6,7 +6,7 @@
 #    By: ochristm <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/09/05 21:27:35 by ochristm          #+#    #+#              #
-#    Updated: 2019/09/05 21:38:13 by ochristm         ###   ########.fr        #
+#    Updated: 2019/09/07 10:45:56 by ochristm         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,7 @@ FLAGS = -Wall -Werror -Wextra
 all: $(NAME)
 	
 $(NAME):
-	gcc $(FLAGS) -c $(SRC) -o $(NAME)
+	gcc $(FLAGS) $(SRC) -o $(NAME)
 
 clean:
 	/bin/rm -f *.o
