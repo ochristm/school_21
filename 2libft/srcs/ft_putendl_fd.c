@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putendl.c                                       :+:      :+:    :+:   */
+/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ochristm <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/08 13:56:34 by ochristm          #+#    #+#             */
-/*   Updated: 2019/09/08 14:00:08 by ochristm         ###   ########.fr       */
+/*   Created: 2019/09/08 18:06:34 by ochristm          #+#    #+#             */
+/*   Updated: 2019/09/08 18:06:48 by ochristm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putendl(char const *s, int fd)
+void	ft_putendl_fd(char const *s, int fd)
 {
 	int i;
 
