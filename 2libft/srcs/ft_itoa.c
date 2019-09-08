@@ -6,7 +6,7 @@
 /*   By: ochristm <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/08 15:08:50 by ochristm          #+#    #+#             */
-/*   Updated: 2019/09/08 18:09:45 by ochristm         ###   ########.fr       */
+/*   Updated: 2019/09/08 18:12:10 by ochristm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ static size_t	ft_nlen(int n, int base)
 	return (len);
 }
 
-char	*ft_itoa(int n)
+char			*ft_itoa(int n)
 {
 	size_t	i;
 	size_t	n_len;
