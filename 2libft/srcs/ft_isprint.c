@@ -6,13 +6,13 @@
 /*   By: ochristm <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/08 11:51:12 by ochristm          #+#    #+#             */
-/*   Updated: 2019/09/08 11:52:03 by ochristm         ###   ########.fr       */
+/*   Updated: 2019/09/08 18:07:45 by ochristm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isprintf(int c)
+int	ft_isprint(int c)
 {
 	return (c >= 32 && c <= 126);
 }
