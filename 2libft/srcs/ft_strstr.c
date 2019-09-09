@@ -6,7 +6,7 @@
 /*   By: ochristm <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/07 19:30:33 by ochristm          #+#    #+#             */
-/*   Updated: 2019/09/07 19:36:09 by ochristm         ###   ########.fr       */
+/*   Updated: 2019/09/09 19:22:43 by ochristm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_strstr(const char *big, const char *small)
 	i = 0;
 	j = 0;
 	if (!small[0])
-		return ((char *)&big);
+		return ((char *)&big[i]);
 	while (big[i])
 	{
 		while ((big[i + j] == small[j]) && small[j])
