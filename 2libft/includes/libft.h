@@ -6,7 +6,7 @@
 /*   By: ochristm <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/08 18:51:15 by ochristm          #+#    #+#             */
-/*   Updated: 2019/09/09 19:02:24 by ochristm         ###   ########.fr       */
+/*   Updated: 2019/09/09 19:50:55 by ochristm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -107,8 +107,5 @@ void				ft_putunbr(uintmax_t n);
 */
 
 double				ft_sqrt(double x);
-static size_t		ft_nlen(int n, int base);
-static int			ft_wcount(const char *s, char c);
-static int			ft_wlen(const char *s, char c);
 
 #endif
