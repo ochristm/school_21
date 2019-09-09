@@ -6,13 +6,13 @@
 /*   By: ochristm <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/08 14:58:08 by ochristm          #+#    #+#             */
-/*   Updated: 2019/09/08 14:58:43 by ochristm         ###   ########.fr       */
+/*   Updated: 2019/09/09 18:44:57 by ochristm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putnbr_fd(int n)
+void	ft_putnbr_fd(int n, int fd)
 {
 	char c;
 
