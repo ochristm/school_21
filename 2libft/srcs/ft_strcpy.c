@@ -6,12 +6,11 @@
 /*   By: ochristm <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/24 14:57:11 by ochristm          #+#    #+#             */
-/*   Updated: 2019/09/07 17:57:59 by ochristm         ###   ########.fr       */
+/*   Updated: 2019/09/09 18:28:57 by ochristm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdio.h>
+#include "libft.h"
 
 char	*ft_strcpy(char *s1, char *s2)
 {
