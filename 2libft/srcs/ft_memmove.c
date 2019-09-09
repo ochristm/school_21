@@ -6,7 +6,7 @@
 /*   By: ochristm <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/07 18:14:23 by ochristm          #+#    #+#             */
-/*   Updated: 2019/09/07 18:26:43 by ochristm         ###   ########.fr       */
+/*   Updated: 2019/09/09 19:08:17 by ochristm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,4 +26,5 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 			((unsigned char *)dst)[i] = ((unsigned char *)src)[i];
 			i++;
 		}
+	return (((unsigned char *)dst));
 }
