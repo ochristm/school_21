@@ -6,13 +6,13 @@
 /*   By: ochristm <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/24 14:57:11 by ochristm          #+#    #+#             */
-/*   Updated: 2019/09/09 19:13:04 by ochristm         ###   ########.fr       */
+/*   Updated: 2019/09/09 19:36:43 by ochristm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strcpy(const char *s1, const char *s2)
+char	*ft_strcpy(char *s1, const char *s2)
 {
 	int i;
 
