@@ -6,7 +6,7 @@
 /*   By: ochristm <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/08 12:26:40 by ochristm          #+#    #+#             */
-/*   Updated: 2019/09/11 19:15:32 by ochristm         ###   ########.fr       */
+/*   Updated: 2019/09/11 20:48:53 by ochristm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,6 @@
 
 void	ft_strclr(char *str)
 {
-	int i;
-
-	i = 0;
-	while (str[i])
-		str[i++] = '\0';
+	if (str)
+		ft_bzero(str, ft_strlen(str));
 }
