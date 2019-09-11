@@ -6,7 +6,7 @@
 #    By: ochristm <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/09/05 21:27:35 by ochristm          #+#    #+#              #
-#    Updated: 2019/09/11 20:40:14 by ochristm         ###   ########.fr        #
+#    Updated: 2019/09/11 20:59:10 by ochristm         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,7 @@ FLAGS = -Wall -Werror -Wextra
 
 all: $(NAME)
 	
-$(NAME):
+$(NAME): $(OBJECTS)
 	gcc $(FLAGS) -c $(SRC) -I $(HEADERS)
 	ar rc $(NAME) $(OBJECTS)
 	ranlib $(NAME)
