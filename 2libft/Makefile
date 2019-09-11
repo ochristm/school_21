@@ -6,14 +6,14 @@
 #    By: ochristm <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/09/05 21:27:35 by ochristm          #+#    #+#              #
-#    Updated: 2019/09/08 18:27:09 by ochristm         ###   ########.fr        #
+#    Updated: 2019/09/11 20:29:51 by ochristm         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
-SRC = srcs/*.c
+SRC = *.c
 OBJECTS = *.o
-HEADERS = includes/*.h
+HEADERS = *.h
 FLAGS = -Wall -Werror -Wextra
 
 all: $(NAME)
