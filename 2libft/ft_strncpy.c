@@ -6,7 +6,7 @@
 /*   By: ochristm <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/07 18:39:12 by ochristm          #+#    #+#             */
-/*   Updated: 2019/09/11 20:52:42 by ochristm         ###   ########.fr       */
+/*   Updated: 2019/09/14 12:17:00 by ochristm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strncpy(char *dst, const char *src, size_t n)
 	size_t strln;
 
 	i = 0;
-	if (!src || !dst)
+	if (src == NULL && dst == NULL)
 		return (NULL);
 	strln = ft_strlen((char*)src);
 	while (i < n)
