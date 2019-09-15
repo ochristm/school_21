@@ -6,13 +6,13 @@
 /*   By: ochristm <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/08 16:41:41 by ochristm          #+#    #+#             */
-/*   Updated: 2019/09/08 18:11:09 by ochristm         ###   ########.fr       */
+/*   Updated: 2019/09/15 20:56:15 by ochristm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int		ft_wcount(const char *s, char c)
+static int		fc(const char *s, char c)
 {
 	int	i;
 	int	word;
@@ -30,7 +30,7 @@ static int		ft_wcount(const char *s, char c)
 	return (word);
 }
 
-static int		ft_wlen(const char *s, char c)
+static int		fl(const char *s, char c)
 {
 	int i;
 	int len;
@@ -44,30 +44,49 @@ static int		ft_wlen(const char *s, char c)
 	return (len);
 }
 
+static int		ft_freemem(char **s1)
+{
+	size_t	len;
+
+	len = 0;
+	while (s1[len])
+		len++;
+	while (len)
+	{
+		free(s1[len]);
+		s1[len] = NULL;
+		len--;
+	}
+	free(s1);
+	s1 = NULL;
+	return (1);
+}
+
 char			**ft_strsplit(char const *s, char c)
 {
 	int		i;
 	int		j;
 	int		k;
-	char	**str;
+	char	**s1;
 
 	k = 0;
-	i = 0;
-	if (!s \
-			|| !(str = (char **)malloc(sizeof(char *) * (ft_wcount(s, c)) + 1)))
+	i = -1;
+	if (!s)
 		return (NULL);
-	while (i < ft_wcount(s, c))
+	if (!(s1 = (char **)malloc(sizeof(char *) * (fc(s, c)) + 1)))
+		return (NULL);
+	while (++i < fc(s, c))
 	{
-		if (!(str[i] = (char *)malloc(sizeof(char) * (ft_wlen(&s[k], c) + 1))))
+		s1[i] = (char *)malloc(sizeof(char) * (fl(&s[k], c) + 1));
+		if (((!s1[i]) ? ft_freemem(s1) : 0))
 			return (NULL);
 		j = 0;
 		while (s[k] == c)
 			k++;
 		while (s[k] != c && s[k])
-			str[i][j++] = s[k++];
-		str[i][j] = '\0';
-		i++;
+			s1[i][j++] = s[k++];
+		s1[i][j] = '\0';
 	}
-	str[i] = NULL;
-	return (str);
+	s1[i] = NULL;
+	return (s1);
 }
