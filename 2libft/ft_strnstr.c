@@ -6,7 +6,7 @@
 /*   By: ochristm <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/08 18:16:26 by ochristm          #+#    #+#             */
-/*   Updated: 2019/09/09 19:23:19 by ochristm         ###   ########.fr       */
+/*   Updated: 2019/09/15 11:41:14 by ochristm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,5 @@ char	*ft_strnstr(const char *big, const char *small, size_t l)
 		j = 0;
 		i++;
 	}
-	if (!small[0])
-		return ((char *)&big[i]);
 	return (NULL);
 }
