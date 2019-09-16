@@ -21,13 +21,7 @@
 */
 
 int					ft_atoi(const char *str);
-int					ft_atoi_base(const char *str, int base);
 char				*ft_itoa(int n);
-char				*ft_itoa_base(int value, int base);
-void				*ft_realloc(void *ptr, size_t size);
-void				*ft_calloc(size_t count, size_t size);
-void				ft_qsort(void *base, size_t nmemb, \
-		size_t size, int (*fcmp)(void *, void *));
 
 /*
 ** From string.h
@@ -77,12 +71,8 @@ void				ft_bzero(void *s, size_t n);
 int					ft_isascii(int c);
 int					ft_isalnum(int c);
 int					ft_isalpha(int c);
-int					ft_isblank(int c);
-int					ft_iscntrl(int c);
 int					ft_isdigit(int c);
-int					ft_isgraph(int c);
 int					ft_islower(int c);
-int					ft_isspace(int c);
 int					ft_tolower(int c);
 int					ft_toupper(int c);
 int					ft_isprint(int c);
@@ -93,14 +83,12 @@ int					ft_isprint(int c);
 
 void				ft_putchar(char c);
 void				ft_putchar_fd(char c, int fd);
-void				ft_putnchar(char c, int n);
 void				ft_putstr(const char *s);
 void				ft_putstr_fd(const char *s, int fd);
 void				ft_putendl(const char *s);
 void				ft_putendl_fd(const char *s, int fd);
 void				ft_putnbr(int n);
 void				ft_putnbr_fd(int n, int fd);
-void				ft_putunbr(uintmax_t n);
 
 /*
 ** bonus part
