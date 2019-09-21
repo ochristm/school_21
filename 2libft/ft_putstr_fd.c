@@ -6,7 +6,7 @@
 /*   By: ochristm <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/08 13:50:41 by ochristm          #+#    #+#             */
-/*   Updated: 2019/09/21 15:45:23 by ochristm         ###   ########.fr       */
+/*   Updated: 2019/09/21 16:22:47 by ochristm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,6 @@
 
 void	ft_putstr_fd(char const *s, int fd)
 {
-	size_t	i;
-
-	i = 0;
 	if (s)
-		while (s[i] != '\0')
-			write(fd, &s[i++], 1);
+		write(fd, s, ft_strlen(s));
 }
