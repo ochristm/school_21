@@ -6,7 +6,7 @@
 /*   By: ochristm <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/08 12:38:54 by ochristm          #+#    #+#             */
-/*   Updated: 2019/09/21 15:27:28 by ochristm         ###   ########.fr       */
+/*   Updated: 2019/09/21 17:55:11 by ochristm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strmap(char const *s, char (*f)(char))
 	char	*str;
 
 	i = 0;
-	if (!s)
+	if (!s || (ft_strlen(s) + 1 == 0))
 		return (NULL);
 	if (!(str = (char *)malloc(sizeof(char) * ft_strlen(s) + 1)))
 		return (NULL);
