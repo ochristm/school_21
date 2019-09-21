@@ -6,7 +6,7 @@
 /*   By: ochristm <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/08 13:06:50 by ochristm          #+#    #+#             */
-/*   Updated: 2019/09/08 13:11:37 by ochristm         ###   ########.fr       */
+/*   Updated: 2019/09/21 15:07:58 by ochristm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,11 @@
 
 char	*ft_strsub(char const *s, unsigned int start, size_t len)
 {
-	unsigned int	i;
-	char			*strsub;
+	size_t	i;
+	char	*strsub;
 
+	if (len + 1 == 0)
+		return (NULL);
 	i = 0;
 	if (!(strsub = (char *)malloc(sizeof(char) * len + 1)) || !s)
 		return (NULL);

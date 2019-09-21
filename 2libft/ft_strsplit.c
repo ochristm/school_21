@@ -6,16 +6,16 @@
 /*   By: ochristm <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/08 16:41:41 by ochristm          #+#    #+#             */
-/*   Updated: 2019/09/15 20:56:15 by ochristm         ###   ########.fr       */
+/*   Updated: 2019/09/21 15:47:35 by ochristm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int		fc(const char *s, char c)
+static size_t	fc(const char *s, char c)
 {
-	int	i;
-	int	word;
+	size_t	i;
+	size_t	word;
 
 	i = 0;
 	word = 0;
@@ -30,7 +30,7 @@ static int		fc(const char *s, char c)
 	return (word);
 }
 
-static int		fl(const char *s, char c)
+static size_t	fl(const char *s, char c)
 {
 	int i;
 	int len;
@@ -64,9 +64,9 @@ static int		ft_freemem(char **s1)
 
 char			**ft_strsplit(char const *s, char c)
 {
-	int		i;
-	int		j;
-	int		k;
+	size_t	i;
+	size_t	j;
+	size_t	k;
 	char	**s1;
 
 	k = 0;

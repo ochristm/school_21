@@ -6,7 +6,7 @@
 /*   By: ochristm <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/07 18:46:50 by ochristm          #+#    #+#             */
-/*   Updated: 2019/09/07 19:36:29 by ochristm         ###   ########.fr       */
+/*   Updated: 2019/09/21 15:29:14 by ochristm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 char	*ft_strcat(char *s1, const char *s2)
 {
-	unsigned int i;
-	unsigned int len;
+	size_t	i;
+	size_t	len;
 
 	i = 0;
 	len = ft_strlen(s1);

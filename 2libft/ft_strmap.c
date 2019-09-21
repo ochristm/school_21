@@ -6,7 +6,7 @@
 /*   By: ochristm <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/08 12:38:54 by ochristm          #+#    #+#             */
-/*   Updated: 2019/09/08 12:53:16 by ochristm         ###   ########.fr       */
+/*   Updated: 2019/09/21 15:27:28 by ochristm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strmap(char const *s, char (*f)(char))
 {
-	int		i;
+	size_t	i;
 	char	*str;
 
 	i = 0;

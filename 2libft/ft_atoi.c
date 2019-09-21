@@ -6,7 +6,7 @@
 /*   By: ochristm <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/25 13:11:19 by ochristm          #+#    #+#             */
-/*   Updated: 2019/09/14 12:35:41 by ochristm         ###   ########.fr       */
+/*   Updated: 2019/09/21 15:42:38 by ochristm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 int	ft_atoi(const char *str)
 {
 	unsigned long long	res;
-	int					i;
+	size_t				i;
 	int					sign;
 
 	i = 0;
@@ -36,5 +36,5 @@ int	ft_atoi(const char *str)
 			return (sign == 1 ? -1 : 0);
 		break ;
 	}
-	return (res * sign);
+	return ((int)(res * sign));
 }
